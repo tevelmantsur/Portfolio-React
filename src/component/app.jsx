@@ -7,7 +7,6 @@ import Test from "./test.jsx";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Footer from "./footer.jsx";
 import NavBar from "./navbar.jsx";
-import About from "./about";
 import { ContactUs } from "./ContactUs.jsx";
 
 function App() {

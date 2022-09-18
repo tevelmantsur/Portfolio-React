@@ -33,7 +33,7 @@ export default function Header() {
             borderRadius: "100px 350px 350px 100px",
           }}
         >
-          <img style={{ height: "100%" }} src={require("../images/meme.png")} />
+          <img style={{ height: "100%" }} alt="Tevel Mantsur" src={require("../images/meme.png")} />
         </div>
       </div>
     </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import data from "../data";
 import Proj from "./proj";
 function Projects(props) {
@@ -30,6 +29,8 @@ function Projects(props) {
         {data.map((project, index) => {
           if (index % 3 === 0) {
             return Project(project, index);
+          }else{
+            return null
           }
         })}
       </div>
@@ -38,12 +39,18 @@ function Projects(props) {
           if (index % 3 === 1) {
             return Project(project, index);
           }
+          else{
+            return null
+          }
         })}
       </div>
       <div style={{ flex: "33%" }}>
         {data.map((project, index) => {
           if (index % 3 === 2) {
             return Project(project, index);
+          }
+          else{
+            return null
           }
         })}
       </div>
