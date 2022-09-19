@@ -37,30 +37,6 @@ const Navbar = () => {
   return (
     <AppBar  className="navBar" style={{ ...navbarStyles, top: visible ? "0" : "-70px" }}>
       <ResponsiveAppBar/>
-     {/* <div
-        className="navBar"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          position: "fixed",
-          width: "100%",
-        }}
-      >
-       <div>
-
-       <img    style={{ height: "70px", padding: "0 20px" }}
-                alt="Forward Arrow"
-                src={require("../images/icons/LOGO.png")} />
-       </div>
-        <ul className="navbar-links" >
-          <li onClick={() => window.location.replace("/#start")}>Start</li>
-          <li onClick={() => window.location.replace("/#projects")}>
-            Projects
-          </li>
-          <li onClick={() => window.location.replace("/#about")}>About</li>
-          <li onClick={() => window.location.replace("/#contact")}>Contact</li>
-        </ul>
-      </div>*/}
     </AppBar>
   );
 };

@@ -2,7 +2,7 @@ let data = [
   {
     id: 1,
     name: "Apartments APP",
-    details: `Anime app Coolest thing ever`,
+    details: `On the Backend I used Puppeteer to scrape the site "YAD2" with Proxy. Im saving the data in Mongodb server .On the front End Im getting the data from Mongodb and send queries to retrieve specific data`,
     img: "facebook.jpg",
     backgroundImg: "Apartments.png",
     Technology: [
@@ -19,7 +19,6 @@ let data = [
   {
     id: 2,
     name: "Anime APP",
-    details: `Anime app Coolest thing ever`,
     img: "facebook.jpg",
     backgroundImg: "AnimeApp.jpg",
     Technology: ["React", "HTML5", "CSS3"],
@@ -30,7 +29,8 @@ let data = [
   {
     id: 3,
     name: "Tevel Develepoment",
-    details: `Anime app Coolest thing ever`,
+    details: `This project is my portfolio, it shows all my works and my ideas and it also has all the details about me.
+    Built with lots of love using React`,
     img: "facebook.jpg",
     backgroundImg: "TevelDEV.png",
     Technology: ["React", "HTML5", "CSS3"],
@@ -39,7 +39,6 @@ let data = [
   {
     id: 4,
     name: "Tree APP",
-    details: `Anime app Coolest thing ever`,
     img: "facebook.jpg",
     backgroundImg: "MagenTrees.png",
     mobile: true,
@@ -48,7 +47,6 @@ let data = [
   {
     id: 5,
     name: "HELEN TZUR",
-    details: "הדרכה אישית וקבוצית",
     img: "facebook.jpg",
     backgroundImg: "HelenPage.png",
     Technology: ["Wordpress", "HTML5", "CSS3", "PHP"],
@@ -56,7 +54,6 @@ let data = [
   {
     id: 6,
     name: "DUBI BUS",
-    details: "הסעות לכל הארץ",
     img: "dubibus.png",
     backgroundImg: "dubibus.png",
     Technology: ["Wordpress", "HTML5"],
@@ -65,7 +62,6 @@ let data = [
   {
     id: 7,
     name: "DUBI TOURS",
-    details: "הסעות לכל הארץ",
     img: "dubitours.png",
     backgroundImg: "dubitours.png",
     Technology: ["Wordpress", "HTML5", "CSS3", "PHP"],
@@ -74,7 +70,6 @@ let data = [
   {
     id: 8,
     name: "SELVA RESORT",
-    details: "ווילות בקוסטה ריקה",
     img: "selvaresort.png",
     backgroundImg: "selvaresort.png",
     Technology: ["Wix", "HTML5", "CSS3"],
@@ -83,7 +78,6 @@ let data = [
   {
     id: 9,
     name: "SUPER FIT",
-    details: "אתר תזונה וכושר",
     img: "24fitclub.png",
     backgroundImg: "SuperfitPage.jpg",
     Technology: ["Wordpress", "HTML5", "CSS3", "PHP"],
@@ -91,7 +85,6 @@ let data = [
   {
     id: 10,
     name: "CANNA YAGODA",
-    details: "קנאביס",
     img: "cannayagoda.png",
     backgroundImg: "CannayagodaPage.jpg",
     Technology: ["Wordpress", "HTML5", "CSS3", "PHP"],
@@ -100,7 +93,6 @@ let data = [
   {
     id: 11,
     name: "FLYCHIPS",
-    details: "'ציפים לעולם",
     img: "flychips.png",
     backgroundImg: "FlychipsPage.png",
     Technology: ["Wordpress", "HTML5", "CSS3", "PHP"],
@@ -109,7 +101,6 @@ let data = [
   {
     id: 12,
     name: "Yeshivot APP",
-    details: `Anime app Coolest thing ever`,
     img: "facebook.jpg",
     backgroundImg: "YeshivotAPP.jpg",
     mobile: true,
@@ -128,7 +119,6 @@ let data = [
   {
     id: 14,
     name: "MyWay",
-    details: `תחבורהההה`,
     img: "facebook.jpg",
     backgroundImg: "MyWay.jpg",
     Technology: ["Wordpress", "HTML5", "CSS3", "Bootstrap", "PHP"],
