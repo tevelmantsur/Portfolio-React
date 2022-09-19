@@ -1,3 +1,4 @@
+import { Grid } from "@material-ui/core";
 import React from "react";
 import data from "../data";
 import Proj from "./proj";
@@ -20,12 +21,18 @@ function Projects(props) {
   }
 
   return (
-    <div
+    <Grid
+    container
+  spacing={8}
+  direction="row"
+  justifyContent="center"
+  alignItems="center"
       id="projects"
-      style={{ display: "flex", flexWrap: "wrap" , position:"relative"}}
+    //  style={{ display: "flex", flexWrap: "wrap" , position:"relative"}}
     >
+    
      
-      <div style={{ flex: "33%" }}>
+      <Grid item   xs={12} sm={12} md={6} lg={4} xl={4}>
         {data.map((project, index) => {
           if (index % 3 === 0) {
             return Project(project, index);
@@ -33,8 +40,8 @@ function Projects(props) {
             return null
           }
         })}
-      </div>
-      <div style={{ flex: "33%" }}>
+      </Grid>
+      <Grid item xs={12} sm={12} md={6} lg={4} xl={4} >
         {data.map((project, index) => {
           if (index % 3 === 1) {
             return Project(project, index);
@@ -43,8 +50,8 @@ function Projects(props) {
             return null
           }
         })}
-      </div>
-      <div style={{ flex: "33%" }}>
+      </Grid>
+      <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
         {data.map((project, index) => {
           if (index % 3 === 2) {
             return Project(project, index);
@@ -53,8 +60,8 @@ function Projects(props) {
             return null
           }
         })}
-      </div>
-    </div>
+      </Grid>
+    </Grid>
   );
 }
 

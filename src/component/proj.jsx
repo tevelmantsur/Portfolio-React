@@ -41,7 +41,7 @@ function Proj(props) {
 
   return (
     <div
-      style={{ padding: "25px" }}
+      style={{ marginTop: "35px" }}
       ref={ref}
     >
           <Link to={`/${props.name}`}>
