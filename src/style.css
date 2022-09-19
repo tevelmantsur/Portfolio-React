@@ -177,9 +177,7 @@ h1 {
   animation: scale 1800ms ease-in-out;
   animation-delay: 400ms;
 }
-.projectImage {
-  
-}
+
 
 @keyframes animation {
   from {
