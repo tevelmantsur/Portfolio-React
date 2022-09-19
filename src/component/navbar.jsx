@@ -1,5 +1,7 @@
+import { AppBar } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
 import { debounce } from "./helper";
+import ResponsiveAppBar from "./Responsive-menu";
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -29,11 +31,13 @@ const Navbar = () => {
     transition: "top 0.6s",
     zIndex: "99",
     textAlign: "center",
+    width:"100%"
   };
 
   return (
-    <div style={{ ...navbarStyles, top: visible ? "0" : "-70px" }}>
-      <div
+    <AppBar  className="navBar" style={{ ...navbarStyles, top: visible ? "0" : "-70px" }}>
+      <ResponsiveAppBar/>
+     {/* <div
         className="navBar"
         style={{
           display: "grid",
@@ -56,8 +60,8 @@ const Navbar = () => {
           <li onClick={() => window.location.replace("/#about")}>About</li>
           <li onClick={() => window.location.replace("/#contact")}>Contact</li>
         </ul>
-      </div>
-    </div>
+      </div>*/}
+    </AppBar>
   );
 };
 

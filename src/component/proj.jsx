@@ -76,7 +76,7 @@ function Proj(props) {
                 <br />
               </h2>
               <hr></hr>
-              {props.id} <br />
+             
               <span style={{ width: "20px" }}>
                 <img
                   alt="Forward Arrow"

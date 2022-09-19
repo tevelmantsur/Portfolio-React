@@ -1,30 +1,41 @@
-import { Box, Button, Container, Typography } from "@material-ui/core";
+import { Box, Button, Container, IconButton, Typography } from "@material-ui/core";
 import React from "react";
 import Typist from "react-typist";
-
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 export default function Header() {
   return (
-    <Container maxWidth={false} id="start" className="headerContainer">
+    <Container maxWidth={false} id="start" className="headerContainer ">
       <div className="flex" style={{ justifyContent: "space-evenly" }}>
         <Box padding="25px">
-          <Typography variant="h1">Hello I'm</Typography>
-          <Typography variant="h1" style={{ color: "#ff0053f0" }}>
+         <Box mb={1}>
+         <Typography className="header-text" variant="h2">Hello I'm</Typography>
+          <Typography  className="header-text" variant="h1" style={{ color: "#ff0053f0" }}>
             Tevel Mantsur
           </Typography>
 
-          <Box m={5}>
+         </Box>
+          <Box mb={5}>
           <Typist cursor={{ show: false }}>
-            <Typography variant="h6">
-              Creative self taught Web developer
+            <Typography variant="h6" >
+            CREATIVE SELF TAUGHT WEB DEVELOPER
             </Typography>
             <Typography variant="h6">
-              craving to learn and expand my variety of skills
+            CRAVING TO LEARN AND EXPAND MY VARIETY OF SKILLS
             </Typography>
           </Typist>
           </Box>
           
-        <Box m={5}>
-        <Button   size="large" color="primary" variant="contained">CV</Button>
+        <Box className="flex">
+        <button style={{marginRight:"12px"}}>CV</button>
+        <IconButton href="https://github.com/tevelmantsur" >
+        <GitHubIcon style={{color:"white"}} fontSize="large" />
+        </IconButton>
+
+        <IconButton href="https://www.linkedin.com/in/tevel-mantsur/">
+        <LinkedInIcon  style={{color:"#0077B5" , fontSize:"3rem"}} fontSize="large" />
+        </IconButton>
+
         </Box>
         </Box>
         <Box

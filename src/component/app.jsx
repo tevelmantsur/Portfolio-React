@@ -8,6 +8,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Footer from "./footer.jsx";
 import NavBar from "./navbar.jsx";
 import { ContactUs } from "./ContactUs.jsx";
+import { Typography } from "@material-ui/core";
 
 function App() {
   function ScrollToTopOnMount() {
@@ -31,7 +32,9 @@ function App() {
         <NavBar />
         <Header />
         <div style={{ padding: 60  }}>
-        <h1 style={{fontSize:"2.5rem"}}>MY PROJECTS </h1>
+        <Typography align="center" variant="h4">MY PROJECTS </Typography>
+
+     
         <hr style={{width:"150px", borderColor:"rgb(255 47 115 / 100%)" , borderWidth:"5px 0px 0px " }}></hr>
         <br></br> <br></br>
         <Projects />

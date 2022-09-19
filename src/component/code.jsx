@@ -5,7 +5,7 @@ function Code() {
   return (
     <div id="about" className="wrapScroll" style={{ backgroundColor: "black", padding: "5% 0" }}>
      <Box m={5}>
-     <Typography align="center" variant="h2">MY CODE </Typography>
+     <Typography align="center" variant="h4">MY CODE </Typography>
      <hr style={{width:"150px", borderColor:"rgb(255 47 115 / 100%)" , borderWidth:"5px 0px 0px " }}></hr>
      </Box>
      
