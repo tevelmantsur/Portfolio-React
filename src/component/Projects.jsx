@@ -24,9 +24,6 @@ function Projects(props) {
     <Grid
     container
   spacing={8}
-  direction="row"
-  justifyContent="center"
-  alignItems="center"
       id="projects"
     //  style={{ display: "flex", flexWrap: "wrap" , position:"relative"}}
     >

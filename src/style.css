@@ -421,3 +421,11 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+@media only screen and (min-width: 200px) {
+  .display-mobile{
+    display: none;
+  }
+}
+

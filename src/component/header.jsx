@@ -1,26 +1,29 @@
-import { Box, Container, Typography } from "@material-ui/core";
+import { Box, Button, Container, Typography } from "@material-ui/core";
 import React from "react";
 import Typist from "react-typist";
 
 export default function Header() {
   return (
     <Container maxWidth={false} id="start" className="headerContainer">
-      <div
-        className="flex"
-        style={{ justifyContent: "space-evenly" }}
-      >
+      <div className="flex" style={{ justifyContent: "space-evenly" }}>
         <Box padding="25px">
-          <Typography variant="h1" >
-            Hello I'm 
-            <br></br>
-            <span style={{ color: "#ff0053f0" }}> Tevel Mantsur</span>
+          <Typography variant="h1">Hello I'm</Typography>
+          <Typography variant="h1" style={{ color: "#ff0053f0" }}>
+            Tevel Mantsur
           </Typography>
-          <Typist  cursor={{show:false}} >
-            <h2>Creative self taught Web developer</h2>
-            <h2>craving to learn and expand my variety of skills</h2>
-           
+
+          <Typist cursor={{ show: false }}>
+            <Typography variant="h6">
+              Creative self taught Web developer
+            </Typography>
+            <Typography variant="h6">
+              craving to learn and expand my variety of skills
+            </Typography>
           </Typist>
-          <button style={{marginBottom:"55px"}}>CV</button>
+          
+        <Box m={5}>
+        <Button   size="large" color="primary" variant="contained">CV</Button>
+        </Box>
         </Box>
         <Box
           style={{
@@ -34,7 +37,11 @@ export default function Header() {
             borderRadius: "100px 350px 350px 100px",
           }}
         >
-          <img style={{ height: "100%" }} alt="Tevel Mantsur" src={require("../images/meme.png")} />
+          <img
+            style={{ height: "100%" }}
+            alt="Tevel Mantsur"
+            src={require("../images/meme.png")}
+          />
         </Box>
       </div>
     </Container>

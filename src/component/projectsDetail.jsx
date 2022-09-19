@@ -1,3 +1,4 @@
+import { Grid } from "@material-ui/core";
 import React from "react";
 import {  useHistory } from "react-router-dom";
 
@@ -11,14 +12,14 @@ function ProjectDetails(props) {
 
 
   return (
-    <div className="project-page">
-      <div id="pot" className="project-page-details">
+    <Grid container  direction="row-reverse">
+      <Grid item   xs={12} sm={12} md={4} lg={4} xl={4} id="pot" /*className="project-page-details"*/>
       <div style={{textAlign:"right"}} >
       <button  onClick={history.goBack}>
           X
         </button>
       </div>
-        <div  style={{ textAlign: "center" , margin:"25% 0px" , padding:"0px 5%" }}>
+        <div  style={{ textAlign: "center" , margin:"50px 0px" , padding:"0px 5%" }}>
           <h1>{props.name}</h1>
           <h3>{props.details}</h3>
 <div style={{display:"flex" , justifyContent:"center"}}>
@@ -47,13 +48,13 @@ function ProjectDetails(props) {
  
          </div>
         </div>
-      </div>
-      <div className="project-page-image">
+      </Grid>
+      <Grid item   xs={12} sm={12} md={8} lg={8} xl={8} className="project-page-image">
         <div className="scroll">
           <ImagePage image={props.backgroundImg} />
         </div>
-      </div>
-    </div>
+      </Grid>
+    </Grid>
   );
 }
 

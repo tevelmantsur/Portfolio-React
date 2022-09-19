@@ -25,8 +25,8 @@ function Code() {
             <span className="dot">..</span>
             <span style={{ color: "#499CD6" }}>const </span>
             <span style={{ color: "#7BDCFE" }}>Email</span>=
-            <span style={{ color: "#C39178" }}>'tevelmantsur@gmail.com'</span>
-          </p>{" "}
+            <span style={{ color: "#C39178" }}>{" "} 'tevelmantsur@gmail.com'</span>
+          </p>
           <p className="vscode">
             <span className="numbers">04</span>
             <span className="dot">..</span>
@@ -165,7 +165,7 @@ function Code() {
             <span className="dot">......</span>
             {"{"}
             <span style={{ color: "#839975" }}>"Libraries"</span>:{" "}[
-            <span style={{ color: "#C39178" }}>"Puppeteer","Material-UI" , "Bootstrap" , "React-Router" , "React-Spring" , "React-Native-Papar" , "jQuery" </span> {"]}"},
+            <span style={{ color: "#C39178" }}>"Puppeteer", "Material-UI" , "Bootstrap" , "React-Router" , "React-Spring" , "React-Native-Papar" , "jQuery" </span> {"]}"},
           </p>{" "}
         
           <p className="vscode">

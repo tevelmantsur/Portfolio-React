@@ -8,7 +8,6 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Footer from "./footer.jsx";
 import NavBar from "./navbar.jsx";
 import { ContactUs } from "./ContactUs.jsx";
-import { Container } from "@material-ui/core";
 
 function App() {
   function ScrollToTopOnMount() {
@@ -23,8 +22,11 @@ function App() {
 
   function HomePage() {
     return (
-      <Container maxWidth={false} className="App">
-       
+      <div className="App">
+        <div className="slide">
+          <div className="slide-inner"/>
+        </div>
+        <div>
 
         <NavBar />
         <Header />
@@ -38,10 +40,11 @@ function App() {
       <Code />
      
       <ContactUs/>
+        </div>
        
 
         <Footer />
-      </Container>
+      </div>
     );
   }
 

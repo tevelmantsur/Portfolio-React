@@ -26,7 +26,6 @@ function Proj(props) {
       ")",
 
     height: props.mobile ? "550px" : "250px",
-    minWidth: "350px",
     padding: "15px",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
