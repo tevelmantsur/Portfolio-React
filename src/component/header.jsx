@@ -1,4 +1,4 @@
-import { Box, Button, Container, IconButton, Typography } from "@material-ui/core";
+import { Box, Container, IconButton, Typography } from "@material-ui/core";
 import React from "react";
 import Typist from "react-typist";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';

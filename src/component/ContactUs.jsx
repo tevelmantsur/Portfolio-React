@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
-import { Box, Container, Grid, TextareaAutosize, TextField, Typography } from '@material-ui/core';
+import {  Container, Grid, TextField, Typography } from '@material-ui/core';
 import Alert from '@material-ui/lab/Alert';
 
 export const ContactUs = () => {
