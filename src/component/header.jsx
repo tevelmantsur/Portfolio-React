@@ -12,6 +12,7 @@ export default function Header() {
             Tevel Mantsur
           </Typography>
 
+          <Box m={5}>
           <Typist cursor={{ show: false }}>
             <Typography variant="h6">
               Creative self taught Web developer
@@ -20,6 +21,7 @@ export default function Header() {
               craving to learn and expand my variety of skills
             </Typography>
           </Typist>
+          </Box>
           
         <Box m={5}>
         <Button   size="large" color="primary" variant="contained">CV</Button>

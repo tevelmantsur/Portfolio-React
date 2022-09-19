@@ -310,7 +310,7 @@ h1 {
   }
 }
 
-.scroll::-webkit-scrollbar {
+.scroll::-webkit-scrollbar:horizontal {
   width: 0px;
 }
 
@@ -429,3 +429,21 @@ h1 {
   }
 }
 
+.wrapScroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-base-color: blue;
+  scrollbar-track-color: green;
+}
+
+.wrapScroll::-webkit-scrollbar{
+  height: 8px;
+  width: 4px;
+  background: rgb(0, 0, 0);
+}
+.wrapScroll::-webkit-scrollbar-thumb:horizontal{
+  background: rgb(180, 17, 45);
+  border-radius: 10px;
+  cursor: pointer;
+
+}

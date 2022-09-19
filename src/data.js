@@ -1,16 +1,6 @@
 let data = [
   {
     id: 1,
-    name: "Anime APP",
-    details: `Anime app Coolest thing ever`,
-    img: "facebook.jpg",
-    backgroundImg: "AnimeApp.jpg",
-    Technology: ["React", "HTML5", "CSS3"],
-    Link: "https://young-falls-71941.herokuapp.com/",
-    Git: "https://github.com/tevelmantsur/Movies-APP--react",
-  },
-  {
-    id: 2,
     name: "Apartments APP",
     details: `Anime app Coolest thing ever`,
     img: "facebook.jpg",
@@ -26,6 +16,17 @@ let data = [
     Link: "https://next-js-apartments.vercel.app/",
     Git: "https://github.com/tevelmantsur/NextJs-Apartments",
   },
+  {
+    id: 2,
+    name: "Anime APP",
+    details: `Anime app Coolest thing ever`,
+    img: "facebook.jpg",
+    backgroundImg: "AnimeApp.jpg",
+    Technology: ["React", "HTML5", "CSS3"],
+    Link: "https://young-falls-71941.herokuapp.com/",
+    Git: "https://github.com/tevelmantsur/Movies-APP--react",
+  },
+
   {
     id: 3,
     name: "Tevel Develepoment",
