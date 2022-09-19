@@ -1,28 +1,29 @@
+import { Box, Container, Typography } from "@material-ui/core";
 import React from "react";
 import Typist from "react-typist";
 
 export default function Header() {
   return (
-    <div id="start" className="headerContainer">
+    <Container maxWidth={false} id="start" className="headerContainer">
       <div
         className="flex"
         style={{ justifyContent: "space-evenly" }}
       >
-        <div>
-          <h1 className="header-text">
+        <Box padding="25px">
+          <Typography variant="h1" >
             Hello I'm 
+            <br></br>
             <span style={{ color: "#ff0053f0" }}> Tevel Mantsur</span>
-          </h1>
+          </Typography>
           <Typist  cursor={{show:false}} >
             <h2>Creative self taught Web developer</h2>
             <h2>craving to learn and expand my variety of skills</h2>
            
           </Typist>
           <button style={{marginBottom:"55px"}}>CV</button>
-        </div>
-        <div
+        </Box>
+        <Box
           style={{
-            height: "60vh",
             display: "flex",
             alignItems: "flex-end",
             backgroundImage: `url(${require("../images/web.jpg")})`,
@@ -34,8 +35,8 @@ export default function Header() {
           }}
         >
           <img style={{ height: "100%" }} alt="Tevel Mantsur" src={require("../images/meme.png")} />
-        </div>
+        </Box>
       </div>
-    </div>
+    </Container>
   );
 }

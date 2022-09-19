@@ -217,7 +217,7 @@ h1 {
 }
 
 .slide-div {
-  background-color: rgb(255 47 115 / 94%);
+  background-color: rgb(255 47 115 / 100%);
   border-radius: 7px;
   height: 100%;
   left: 0;
@@ -225,7 +225,7 @@ h1 {
   transform: scaleX(0);
   transform-origin: right center;
   top: 0;
-  animation: open 450ms ease-in;
+  animation: open 850ms ease-in;
   position: absolute;
 }
 
@@ -238,7 +238,7 @@ h1 {
 
   top: 0;
   border: 1px rgb(255, 255, 255) solid;
-  animation: open 450ms ease-in;
+  animation: open 850ms ease-in;
   position: absolute;
 }
 
