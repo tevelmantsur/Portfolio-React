@@ -20,7 +20,7 @@ export default function Header() {
               Tevel Mantsur
             </Typography>
           </Box>
-          <Box mb={5}>
+          <Box mb={2}>
             <Typist cursor={{ show: false }}>
               <Typography variant="h6">
                 CREATIVE SELF TAUGHT WEB DEVELOPER
