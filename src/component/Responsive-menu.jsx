@@ -92,6 +92,7 @@ const ResponsiveAppBar = () => {
                     fontFamily: "fantasy" ,
                     color: "black",
                     width: "100vw",
+                    fontWeight:"700"
                   }}
                   variant="h4"
                   component="a"
