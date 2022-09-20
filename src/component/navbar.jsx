@@ -31,12 +31,15 @@ const Navbar = () => {
     transition: "top 0.6s",
     zIndex: "99",
     textAlign: "center",
-    width:"100%"
+    width: "100%",
   };
 
   return (
-    <AppBar  className="navBar" style={{ ...navbarStyles, top: visible ? "0" : "-70px" }}>
-      <ResponsiveAppBar/>
+    <AppBar
+      className="navBar"
+      style={{ ...navbarStyles, top: visible ? "0" : "-70px" }}
+    >
+      <ResponsiveAppBar />
     </AppBar>
   );
 };

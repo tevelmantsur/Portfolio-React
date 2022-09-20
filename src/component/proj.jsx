@@ -39,44 +39,44 @@ function Proj(props) {
   const [my, setmy] = useState("projectImage");
 
   return (
-    <div
-      style={{ marginTop: "35px" }}
-      ref={ref}
-    >
-          <Link to={`/${props.name}`}>
-
-      <animated.div
-        onMouseMove={(e) => {
-          const rect = ref.current.getBoundingClientRect();
-          set({ xys: calc(e.clientX, e.clientY, rect) });
-        }}
-        onMouseLeave={() => set({ xys: [0, 0, 1] })}
-        style={{
-          transform: prop.xys.interpolate(trans),
-          width: "100%",
-        }}
-      >
-        <div
-          style={style}
-          onClick={() => {
-            setmy("tester");
+    <div style={{ marginTop: "35px" }} ref={ref}>
+      <Link to={`/${props.name}`}>
+        <animated.div
+          onMouseMove={(e) => {
+            const rect = ref.current.getBoundingClientRect();
+            set({ xys: calc(e.clientX, e.clientY, rect) });
+          }}
+          onMouseLeave={() => set({ xys: [0, 0, 1] })}
+          style={{
+            transform: prop.xys.interpolate(trans),
+            width: "100%",
           }}
         >
+          <div
+            style={style}
+            onClick={() => {
+              setmy("tester");
+            }}
+          >
             <div className={my === "projectImage" ? null : "slide-img"} />
 
             <div
               className="project-name"
               style={{ bottom: "0", left: "-25px", right: "95%" }}
             >
-              <div
-                className={ my === "projectImage" ? null : "slide-div reveal-num"} />
-              <h2 style={{textAlign:"left"}} className="project-name">
+              <h2 style={{ textAlign: "left" }} className="project-name">
                 <div className={my === "projectImage" ? null : "slide-div"} />
                 {props.name}
                 <br />
               </h2>
+              <div
+                className={
+                  my === "projectImage" ? null : "slide-div reveal-num"
+                }
+              />
+
               <hr></hr>
-             
+
               <span style={{ width: "20px" }}>
                 <img
                   alt="Forward Arrow"
@@ -85,11 +85,9 @@ function Proj(props) {
                 ></img>
               </span>
             </div>
-          
-        </div>
-      </animated.div>
+          </div>
+        </animated.div>
       </Link>
-
     </div>
   );
 }

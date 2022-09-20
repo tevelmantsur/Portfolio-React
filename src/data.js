@@ -34,6 +34,7 @@ let data = [
     img: "facebook.jpg",
     backgroundImg: "TevelDEV.png",
     Technology: ["React", "HTML5", "CSS3"],
+    Link: "https://teveldevelopment.netlify.app/",
     Git: "https://github.com/tevelmantsur/Portfolio-React",
   },
   {

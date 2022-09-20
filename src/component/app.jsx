@@ -25,27 +25,28 @@ function App() {
     return (
       <div className="App">
         <div className="slide">
-          <div className="slide-inner"/>
+          <div className="slide-inner" />
         </div>
         <div>
-
-        <NavBar />
-        <Header />
-        <div style={{ padding: 60  }}>
-        <Typography align="center" variant="h4">MY PROJECTS </Typography>
-
-     
-        <hr style={{width:"150px", borderColor:"rgb(255 47 115 / 100%)" , borderWidth:"5px 0px 0px " }}></hr>
-        <br></br> <br></br>
-        <Projects />
-      </div>
-     
-      <Code />
-     
-      <ContactUs/>
+          <NavBar />
+          <Header />
+          <div style={{ padding: 60 }}>
+            <Typography align="center" variant="h4">
+              MY PROJECTS{" "}
+            </Typography>
+            <hr
+              style={{
+                width: "150px",
+                borderColor: "rgb(255 47 115 / 100%)",
+                borderWidth: "5px 0px 0px ",
+              }}
+            ></hr>
+            <br></br> <br></br>
+            <Projects />
+          </div>
+          <Code />
+          <ContactUs />
         </div>
-       
-
         <Footer />
       </div>
     );

@@ -3,20 +3,20 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family:  monospace;
+  font-family: monospace;
   margin: 0;
   background: #1a1527;
   color: white;
 }
 
-button{
+button {
   font-size: 1.2rem;
   font-weight: 600;
-  background-color:rgb(255 47 115 / 94%);
+  background-color: rgb(255 47 115 / 94%);
   color: white;
   padding: 10px 50px;
   border-radius: 10px;
-  border:none;
+  border: none;
   cursor: pointer;
 }
 
@@ -25,28 +25,20 @@ a {
   color: white;
 }
 
-h2{
+h2 {
   font-size: 1.5rem;
 }
 
-input{
+input {
   font-family: monospace;
 }
 
-
-
-.headerContainer{
-  padding-top:120px;
-  background-image: linear-gradient(to right, #1A1527 0%, #1a1527ba 69%),
-  url("https://images.pexels.com/photos/3745234/pexels-photo-3745234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-size: "cover"
+.headerContainer {
+  padding-top: 120px;
+  background-image: linear-gradient(to right, #1a1527 0%, #1a1527ba 69%),
+    url("https://images.pexels.com/photos/3745234/pexels-photo-3745234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: "cover";
 }
-
-
-
-
-
-
 
 .test {
   font-size: 5rem;
@@ -96,18 +88,16 @@ input{
   background-color: aquamarine;
 }
 
-
-
 h1 {
   text-align: center;
   margin: 0;
 }
 
-
-.flex{
+.flex {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;  text-align: center;
+  flex-direction: row;
+  text-align: center;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -178,7 +168,6 @@ h1 {
   animation-delay: 400ms;
 }
 
-
 @keyframes animation {
   from {
     background-position: -500px;
@@ -245,9 +234,7 @@ h1 {
 }
 
 #pot {
-
   animation: fadelong 2000ms ease-in;
- 
 }
 
 @keyframes fadelong {
@@ -300,7 +287,7 @@ h1 {
 
 .header-text {
   text-align: center;
-  font-size: 4.8rem
+  font-size: 4.8rem;
 }
 
 .navbar-links {
@@ -356,15 +343,10 @@ h1 {
   position: relative;
 }
 
-
-
-
 .grid {
   display: grid;
-  grid-template-rows: 
-    repeat(4, 180px);
-  grid-template-columns: 
-    repeat(3, 1fr);
+  grid-template-rows: repeat(4, 180px);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
 }
 
@@ -394,17 +376,14 @@ h1 {
 
 /* styling code */
 
-
-
 .grid > .item {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
 @media only screen and (min-width: 200px) {
-  .display-mobile{
+  .display-mobile {
     display: none;
   }
 }
@@ -416,14 +395,13 @@ h1 {
   scrollbar-track-color: green;
 }
 
-.wrapScroll::-webkit-scrollbar{
+.wrapScroll::-webkit-scrollbar {
   height: 8px;
   width: 4px;
   background: rgb(0, 0, 0);
 }
-.wrapScroll::-webkit-scrollbar-thumb:horizontal{
+.wrapScroll::-webkit-scrollbar-thumb:horizontal {
   background: rgb(180, 17, 45);
   border-radius: 10px;
   cursor: pointer;
-
 }
