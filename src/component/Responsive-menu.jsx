@@ -89,7 +89,6 @@ const ResponsiveAppBar = () => {
                 <Typography
                   style={{
                     padding: "8px", 
-                    fontFamily: "fantasy" ,
                     color: "black",
                     width: "100vw",
                     fontWeight:"700"

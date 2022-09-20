@@ -39,7 +39,15 @@ input {
     url("https://images.pexels.com/photos/3745234/pexels-photo-3745234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: "cover";
 }
-
+@media  screen and (max-width: 1041px) {
+  .headerContainer {
+    margin-top : 64px;
+    padding-top: 20px;
+    background-image: linear-gradient(to right, #1a1527 0%, #1a1527ba 69%),
+      url("https://images.pexels.com/photos/3745234/pexels-photo-3745234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: "cover";
+  }
+}
 .test {
   font-size: 5rem;
   font-family: "monospace";
@@ -382,11 +390,7 @@ h1 {
   background-size: cover;
 }
 
-@media only screen and (min-width: 200px) {
-  .display-mobile {
-    display: none;
-  }
-}
+
 
 .wrapScroll {
   white-space: nowrap;
