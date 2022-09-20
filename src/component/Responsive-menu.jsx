@@ -7,10 +7,10 @@ import { Box, Container, MenuItem } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 const pages = [
-  { text: "start", url: "/#start" },
-  { text: "projects", url: "/#projects" },
-  { text: "about", url: "/#about" },
-  { text: "contact", url: "/#contact" },
+  { text: "START", url: "/#start" },
+  { text: "PROJECTS", url: "/#projects" },
+  { text: "ABOUT", url: "/#about" },
+  { text: "CONTACT", url: "/#contact" },
 ];
 
 const ResponsiveAppBar = () => {
@@ -34,11 +34,6 @@ const ResponsiveAppBar = () => {
           href="#start"
           sx={{
             display: { xs: "none", md: "flex" },
-            fontFamily: "fantasy",
-            fontWeight: 700,
-            letterSpacing: ".3rem",
-            color: "inherit",
-            textDecoration: "none",
           }}
         >
           <img
@@ -93,11 +88,11 @@ const ResponsiveAppBar = () => {
               <MenuItem key={index} onClick={handleCloseNavMenu}>
                 <Typography
                   style={{
+                    padding: "8px", 
+                    fontFamily: "fantasy" ,
                     color: "black",
                     width: "100vw",
-                    fontFamily: "fantasy",
                   }}
-                  fontWeight="400"
                   variant="h4"
                   component="a"
                   href={page.url}
