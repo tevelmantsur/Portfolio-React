@@ -58,6 +58,7 @@ export default function Header() {
           }}
         >
           <img
+          className="myImage"
             style={{ height: "100%" }}
             alt="Tevel Mantsur"
             src={require("../images/meme.png")}
