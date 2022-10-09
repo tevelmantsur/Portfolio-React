@@ -32,7 +32,10 @@ export default function Header() {
           </Box>
 
           <Box className="flex">
+            <a href="/Tevel_Mantsur-CV.pdf" download={"Tevel_Mantsur-CV"}>
             <button style={{ marginRight: "12px" }}>CV</button>
+            </a>
+         
             <IconButton href="https://github.com/tevelmantsur">
               <GitHubIcon style={{ color: "white" }} fontSize="large" />
             </IconButton>

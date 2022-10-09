@@ -9,8 +9,11 @@ import Footer from "./footer.jsx";
 import NavBar from "./navbar.jsx";
 import { ContactUs } from "./ContactUs.jsx";
 import { Typography } from "@material-ui/core";
+import data from "../data";
+import FailToLoad from "./FailToLoad.jsx";
 
 function App() {
+  
   function ScrollToTopOnMount() {
     useEffect(() => {
       setTimeout(() => {
@@ -52,13 +55,18 @@ function App() {
     );
   }
 
-  function Page() {
-    return (
-      <div style={{ position: "absolute" }}>
-        <ScrollToTopOnMount />
-        <Test />
-      </div>
-    );
+  function Page(props) {
+   let Check =  data.map((item)=>{
+      if(props.location.pathname == `/${item.name}`){
+        return true
+      }
+    })
+    return(Check.includes(true)  ?  <div style={{ position: "absolute" }}>
+    <ScrollToTopOnMount />
+    <Test />
+  </div>  : <>
+  <NavBar/> <FailToLoad/></>)
+     
   }
 
   return (
