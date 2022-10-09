@@ -57,7 +57,7 @@ function App() {
 
   function Page(props) {
    let Check =  data.map((item)=>{
-      if(props.location.pathname == `/${item.name}`){
+      if(props.location.pathname === `/${item.name}`){
         return true
       }
     })

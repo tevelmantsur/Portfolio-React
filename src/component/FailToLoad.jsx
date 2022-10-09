@@ -1,4 +1,4 @@
-import { Button, Container, Typography } from "@material-ui/core";
+import {  Container, Typography } from "@material-ui/core";
 import React from "react";
 
 function FailToLoad() {
