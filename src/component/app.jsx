@@ -60,6 +60,7 @@ function App() {
       if(props.location.pathname === `/${item.name}`){
         return true
       }
+      return null
     })
     return(Check.includes(true)  ?  <div style={{ position: "absolute" }}>
     <ScrollToTopOnMount />
